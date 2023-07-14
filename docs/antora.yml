@@ -1,0 +1,6 @@
+name: kubernetes-services
+title: APPUiO Managed Kubernetes Services for End-Users
+version: master
+start_page: ROOT:index.adoc
+nav:
+  - modules/ROOT/nav.adoc
