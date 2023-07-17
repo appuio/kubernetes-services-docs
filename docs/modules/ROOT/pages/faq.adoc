@@ -1,0 +1,11 @@
+= Frequently Asked Questions
+
+Get all your questions answered quickly and easily with our FAQs. We've got you covered, making it super simple to find the information you need for a smooth experience while using our APPUiO Managed services.
+
+[cols="1",options="header"]
+|===
+|Topic
+
+|xref:cluster_handover.adoc[Cluster Handover]
+
+|===

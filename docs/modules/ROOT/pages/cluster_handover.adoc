@@ -1,0 +1,43 @@
+= Cluster Handover FAQ
+
+This page covers the most frequently asked questions we received while handing over newly setup clusters.
+
+=== How do we access the Kubernetes Management Dashboard?
+
+You can access the cluster using our Kubernetes management interface, available at https://rancher.vshn.net. You can log in with your VSHN credentials.
+If you are unable to see your cluster, please open a support ticket.
+
+=== How do we access the cluster via CLI?
+
+Once logged in to the Kubernetes Management Dashboard, you’ll be able to download the kubeconfig file, which grants you access to the cluster.
+
+=== What are Apps in the Kubernetes Management Dashboard?
+
+In the context of Rancher, *Apps* often refer to Helm applications that can be managed through Rancher's catalog. Rancher enhances Kubernetes' capabilities by providing additional levels of abstraction to simplify the management of applications. This includes the definition, packaging, and deployment of complex Kubernetes applications as Rancher apps using Helm charts. 
+
+A Helm chart is a collection of files that describe a related set of Kubernetes resources. In simpler terms, a Helm chart is like a packaged application for Kubernetes. These charts help you define, install, and upgrade complex Kubernetes applications. When a chart is deployed, it works as a templating engine to populate multiple YAML files for package dependencies with the required values and deploy all these entities as a single unit on Kubernetes. 
+
+Using Rancher, you can deploy these Helm apps across your Kubernetes clusters with just a few clicks. This includes options for managing versions, configurations, and upgrades of these applications. This simplifies the process of managing complex applications on Kubernetes, as you can manage them all from a single platform rather than having to manually deploy and manage them on each individual Kubernetes cluster. 
+
+NOTE: We do not recommend using these Apps since they're buggy, and we are moving away from Rancher in the near future.
+
+=== Can we set cluster permissions (RBAC) for different roles in the Kubernetes Management Dashboard ourselves?
+
+We fully manage the RBAC for your cluster. So if you require new users, permissions, etc., please contact us via Ticket and we'll gladly create the necessary resources.
+
+=== Can we get access to our GitOps Repository?
+
+We can grant you permission to view all repositories in your GitLab group. This includes the Terraform repository, which manages the infrastructure as code, as well as the Project Syn repository. This one includes our applications like monitoring, backup, etc.
+You are more than welcome to contribute to these repositories. To do so, please create a merge request and ask us to review and deploy your change in a support ticket.
+
+=== Can we get access to information's regarding our cluster?  
+
+We document everything in a customer's Confluence project. We can grant you access if you so desire.
+In there, you can find information on topics like OnCall, SLAs, Architectural Overviews, IPs / Subnets, URLs, Meeting Notes, etc.
+
+=== When will our cluster be maintained?
+
+If no special maintenance window was agreed on, the maintenance for the cluster(s) takes place each week on Tuesday evening.
+Please be aware that the scheduled maintenance window mentioned is subject to change with prior notice. We reserve the right to modify the time frame or duration of the maintenance window as necessary.
+
+See https://products.vshn.ch/service_levels.html#_service_maintenance[here] for further details about the maintenance.
